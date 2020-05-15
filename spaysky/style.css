@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: blanchedalmond;
+  display: flex;
+  justify-content: center;
+}
+/*beginning of home nav div
+-- unsure if i need all of it */
+.changing-divs {
+  background: white;
+  min-width: 250px;
+  max-width: 400px;
+  height: 100vh;
+  width: 100vw;
+}
+.landing-wrapper {
+}
+.header-wrapper {
+  height: 20vh;
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.logo {
+  border: 1px solid black;
+  width: 100%;
+  height: 70%;
+}
+.webtitle {
+  height: 25%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainNavigation {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-grid {
+  display: grid;
+  height: 85%;
+  width: 65%;
+  border: 1px solid black;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 30% 25% 15% 30%;
+}
+
+.grid-item {
+  margin: 2px;
+  padding: 5px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBtn {
+  font-family: Tahoma;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 1px;
+  text-decoration: none;
+  display: flex;
+  font-size: 0.8rem;
+  color: black;
+
+  justify-content: center;
+  align-items: center;
+}
+.nav-image {
+  width: 100%;
+  height: 100%;
+}
+button {
+  padding: 3px;
+  font-size: 0.8rem;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+.footer {
+  height: 10vh;
+  width: 100%;
+  border: 1px solid black;
+  padding: 2px;
+  background: white;
+}
+.footer-text {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: grey;
+}
+.homeBtnContainer {
+  border: double;
+  position: absolute;
+  display: flex;
+  top: 10px;
+}
+.homeBtn {
+  font-family: Tahoma;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 1px;
+  text-decoration: none;
+  display: flex;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.work-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.work {
+  height: 100vh;
+  max-width: 400px;
+  background: white;
+  border: double;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: double;
+}
+/*the buttons styling - borders around the buttons */
+.work-nav {
+  border: double;
+}
+.sideBySide {
+  display: flex;
+}
+/* image slider for work page 
+position is a problem
+need to look up better way to do it*/
+.image-track-container {
+  display: none;
+}
+.image-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.image-window {
+  position: relative;
+  border: 1px solid black;
+  min-width: 250px;
+  min-height: 350px;
+  width: 90%;
+  height: 80%;
+
+  background: white;
+}
+.stickPics {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+.wickerPics {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+.modal-close {
+  background: white;
+  font-family: Tahoma;
+
+  position: absolute;
+  top: -12px;
+  right: -2px;
+  border: double;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+.modalPrev {
+  background: white;
+  border: double;
+  padding: 4px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(-20%, -50%);
+}
+.modalNext {
+  background: white;
+  border: double;
+  padding: 4px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(20%, -50%);
+}
+.show {
+  display: block;
+}

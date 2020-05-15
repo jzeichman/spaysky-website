@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Work</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="changing-divs">
+      <div class="work-wrapper">
+        <div class="work">
+          <div class="homeBtnContainer">
+            <a href="index.html" class="homeBtn">home</a>
+          </div>
+          <div class="work-nav">
+            <button type="button">sticks</button>
+          </div>
+          <div class="sideBySide">
+            <div class="work-nav">
+              <button type="button">foam</button>
+            </div>
+            <div class="work-nav">
+              <button type="button">fans</button>
+            </div>
+          </div>
+          <div class="work-nav">
+            <button type="button">wicker</button>
+          </div>
+          <div class="work-nav">
+            <button type="button">home decor</button>
+          </div>
+          <div class="work-nav">
+            <button type="button">fragrance</button>
+          </div>
+        </divho>
+      </div>
+    </div>
+    <script src="dylan.js"></script>
+  </body>
+</html>
