@@ -1,7 +1,10 @@
 const sticks = document.querySelector(".sticksBtn");
 const wicker = document.querySelector(".wickerBtn");
 const imageTrack = document.querySelector(".image-track-container");
-const modalClose = document.querySelector(".modal-close ");
+
+const stickPics = document.querySelectorAll(".stickPics");
+const wickerPics = document.querySelectorAll(".wickerPics");
+// event listeners for buttons
 
 wicker.addEventListener("click", function () {
   imageTrack.classList.add("show");
@@ -11,14 +14,14 @@ sticks.addEventListener("click", function () {
   imageTrack.classList.add("show");
 });
 
-modalClose.addEventListener("click", function () {
-  imageTrack.classList.remove("show");
-});
+//modal buttons
+
 const modalPrev = document.querySelector(".modalPrev");
 const modalNext = document.querySelector(".modalNext");
 let counter = 0;
-const stickPics = document.querySelectorAll(".stickPics");
-const wickerPics = document.querySelectorAll(".wickerPics");
+const modalClose = document.querySelector(".modal-close ");
+
+//modal buttons eventlisteners
 
 modalNext.addEventListener("click", function () {
   let currentSlide = stickPics[counter];
@@ -29,4 +32,7 @@ modalNext.addEventListener("click", function () {
     counter = 0;
   }
   stickPics[counter].classList.add("show");
+});
+modalClose.addEventListener("click", function () {
+  imageTrack.classList.remove("show");
 });
