@@ -16,40 +16,54 @@
           </div>
           <div class="work-nav">
             <!-- will add event listeners to all buttons-->
-            <button type="button" class="sticksBtn">sticks</button>
+            <button type="button" class="sticksBtn workBtn">sticks</button>
           </div>
           <!-- Div that holds image-slider-->
 
           <div class="sideBySide">
             <div class="work-nav">
-              <button type="button">foam</button>
+              <button type="button" class="workBtn">foam</button>
             </div>
             <div class="work-nav">
-              <button type="button">fans</button>
+              <button type="button" class="workBtn">fans</button>
             </div>
           </div>
           <div class="work-nav">
-            <button type="button" class="wickerBtn">wicker</button>
+            <button type="button" class="wickerBtn workBtn">wicker</button>
           </div>
           <div class="work-nav">
-            <button type="button">home decor</button>
+            <button type="button" class="workBtn">home decor</button>
           </div>
           <div class="work-nav">
-            <button type="button">fragrance</button>
+            <button type="button" class="workBtn">fragrance</button>
           </div>
           <div class="image-track-container">
             <div class="image-track">
               <!-- trying to create separate windows for the image slider-->
-              <!--<div class="wicker-window">
-                <image src="work-images/wicker.jpg" class="wickerPics"></image>
-              </div> -->
+
               <div class="image-window">
-                <image
-                  src="work-images/stick.jpg"
-                  class="stickPics show"
-                ></image>
-                <image src="work-images/stick-1.jpg" class="stickPics"></image>
-                <image src="work-images/stick-2.jpg" class="stickPics"></image>
+                <!-- stick gallery -->
+                <div class="stick-window">
+                  <image
+                    src="work-images/stick.jpg"
+                    class="stickPics show"
+                  ></image>
+                  <image
+                    src="work-images/stick-1.jpg"
+                    class="stickPics"
+                  ></image>
+                  <image
+                    src="work-images/stick-2.jpg"
+                    class="stickPics"
+                  ></image>
+                </div>
+                <!-- wicker gallery -->
+                <div class="wicker-window">
+                  <image
+                    src="work-images/wicker.jpg"
+                    class="wickerPics"
+                  ></image>
+                </div>
 
                 <div class="modal-close">X</div>
                 <div class="modalPrev"><</div>

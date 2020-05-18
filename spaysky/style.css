@@ -167,14 +167,18 @@ need to look up better way to do it*/
   height: 80%;
   background: white;
 }
-
+.stick-window {
+  display: none;
+}
+.wicker-window {
+  display: none;
+}
 .stickPics {
   display: none;
   height: 100%;
   width: 100%;
 }
 .wickerPics {
-  display: none;
   height: 100%;
   width: 100%;
 }

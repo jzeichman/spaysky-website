@@ -1,17 +1,25 @@
-const sticks = document.querySelector(".sticksBtn");
-const wicker = document.querySelector(".wickerBtn");
+const stickBtn = document.querySelector(".sticksBtn");
+const wickerBtn = document.querySelector(".wickerBtn");
 const imageTrack = document.querySelector(".image-track-container");
-
+let workBtns = document.querySelectorAll(".workBtn");
 const stickPics = document.querySelectorAll(".stickPics");
 const wickerPics = document.querySelectorAll(".wickerPics");
+const stickGallery = document.querySelector(".stick-window");
+const wickerGallery = document.querySelector(".wicker-window");
 // event listeners for buttons
 
-wicker.addEventListener("click", function () {
-  imageTrack.classList.add("show");
-});
-
-sticks.addEventListener("click", function () {
-  imageTrack.classList.add("show");
+workBtns.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    imageTrack.classList.add("show");
+    let work = event.target;
+    if (work === stickBtn) {
+      stickGallery.classList.add("show");
+    } else if (work === wickerBtn) {
+      console.log("buns");
+      stickGallery.classList.remove("show");
+      wickerGallery.classList.add("show");
+    }
+  });
 });
 
 //modal buttons
