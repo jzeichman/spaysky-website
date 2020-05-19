@@ -6,6 +6,7 @@ const stickPics = document.querySelectorAll(".stickPics");
 const wickerPics = document.querySelectorAll(".wickerPics");
 const stickGallery = document.querySelector(".stick-window");
 const wickerGallery = document.querySelector(".wicker-window");
+const galleries = document.querySelectorAll(".gallery");
 // event listeners for buttons
 
 workBtns.forEach(function (btn) {
@@ -41,6 +42,19 @@ modalNext.addEventListener("click", function () {
   }
   stickPics[counter].classList.add("show");
 });
+modalPrev.addEventListener("click", function () {
+  let currentSlide = stickPics[counter];
+  currentSlide.classList.remove("show");
+  counter--;
+
+  if (counter < 0) {
+    counter = stickPics.length - 1;
+  }
+  stickPics[counter].classList.add("show");
+});
 modalClose.addEventListener("click", function () {
   imageTrack.classList.remove("show");
+  galleries.forEach(function (gallery) {
+    gallery.classList.remove("show");
+  });
 });
