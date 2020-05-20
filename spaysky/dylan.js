@@ -8,6 +8,7 @@ const stickGallery = document.querySelector(".stick-window");
 const wickerGallery = document.querySelector(".wicker-window");
 // galleries created as array to loop through and remove show when closing modal
 const galleries = document.querySelectorAll(".gallery");
+let currentGallery = [];
 // event listeners for buttons
 
 workBtns.forEach(function (btn) {
@@ -40,17 +41,20 @@ const modalClose = document.querySelector(".modal-close ");
 // added classlist of current gallery to use to create variable to move slides
 // instead of stickPics it needs to be a variable
 modalNext.addEventListener("click", function () {
-  if (1 > 0) {
-    console.log("burp");
+  if (wickerGallery.classList.contains("show")) {
+    currentGallery = wickerPics;
+  } else if (stickGallery.classList.contains("show")) {
+    currentGallery = stickPics;
   }
-  let currentSlide = stickPics[counter];
+  //getting error msg at line 50. may need to use forEach to loop through and check where is current gallery...
+  let currentSlide = currentGallery[counter];
   currentSlide.classList.remove("show");
   counter++;
 
-  if (counter > stickPics.length - 1) {
+  if (counter > currentGallery.length - 1) {
     counter = 0;
   }
-  stickPics[counter].classList.add("show");
+  currentGallery[counter].classList.add("show");
 });
 // modalNext.addEventListener("click", function () {
 //   let currentSlide = stickPics[counter];
