@@ -180,6 +180,7 @@ need to look up better way to do it*/
 
 .wicker-window {
   display: none;
+  min-width: 240px;
 }
 .stickPics {
   display: none;
