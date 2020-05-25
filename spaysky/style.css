@@ -224,6 +224,13 @@ need to look up better way to do it*/
   right: 0;
   transform: translate(20%, -50%);
 }
+.exhibitTitle {
+  font-family: Tahoma;
+  color: rgb(150, 145, 134);
+  padding: 3px;
+  border: double;
+  font-size: 0.8rem;
+}
 .exhibitBtnContainer {
   border: double;
 }
