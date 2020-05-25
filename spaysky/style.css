@@ -231,10 +231,10 @@ need to look up better way to do it*/
   border: double;
   font-size: 0.8rem;
 }
-.exhibitBtnContainer {
+.linkBtnContainer {
   border: double;
 }
-.exhibitionBtns {
+.linkBtns {
   font-family: Tahoma;
   border: 1px solid grey;
   border-radius: 4px;
