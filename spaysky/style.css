@@ -19,8 +19,7 @@ body {
   height: 100vh;
   width: 100vw;
 }
-.landing-wrapper {
-}
+
 .header-wrapper {
   height: 20vh;
   border: 1px solid black;
@@ -85,6 +84,9 @@ button {
   font-size: 0.8rem;
   border: 1px solid grey;
   border-radius: 4px;
+}
+a {
+  padding: 3px;
 }
 .footer {
   height: 10vh;
@@ -221,6 +223,18 @@ need to look up better way to do it*/
   top: 50%;
   right: 0;
   transform: translate(20%, -50%);
+}
+.exhibitBtnContainer {
+  border: double;
+}
+.exhibitionBtns {
+  font-family: Tahoma;
+  border: 1px solid grey;
+  border-radius: 4px;
+  display: flex;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: black;
 }
 .show {
   display: block;
